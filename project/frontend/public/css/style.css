@@ -1,0 +1,295 @@
+.navbar{
+  background: linear-gradient(to right, rgba(0, 27, 46, 1), rgba(0, 60, 102, 1));
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+	color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.85rem
+}
+
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+	color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.85rem
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.navbar-light a.navbar-brand {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+
+/* Hero Section */
+
+.hero {
+  background: #63adf2;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+}
+
+.hero .hero-content h3 {
+  font-weight: 700;
+}
+
+
+.hero .hero-content h1 {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.hero .hero-content p {
+  line-height: 1.8rem;
+  padding-bottom: 2rem;
+  font-weight: 600;
+}
+
+
+/* Tagline Section */
+
+.tagline {
+  background-color: #acc18a;
+  position: relative;
+}
+
+.tagline .img-box {
+  position: relative;
+  width: 90%;
+  top: -3rem;
+  padding-bottom: 3rem;
+  z-index: 2;
+}
+
+.tagline .tagline-content h2 {
+  font-weight: 700;
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.tagline .tagline-content p {
+  font-weight: 550;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+
+/* Video Background Section */
+.videoBackground {
+  position: relative;
+  background: #63adf2;
+}
+
+
+.videoBackground #myVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.videoBackground .btn {
+  position: absolute;
+  margin: auto;
+  bottom: 40px;
+  width: 100%;
+}
+
+.videoBackground .btn-exp {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 3px solid #63adf2;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.videoBackground .btn-gathering {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 3px solid #63adf2;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.videoBackground .btn a{
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.videoBackground a:hover{
+  background: #63adf2;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+/* Features Section */
+
+.feature {
+  background: #63adf2;
+  padding-bottom: 4rem;
+  position: relative;
+}
+
+.feature .feature-title {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.feature .img-box {
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.feature .feature-title h1 {
+  padding-left: 2rem;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+
+.feature .feat-content {
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+
+main.lt-content {
+  padding-top: 4rem;
+}
+
+
+/* benefits Section */
+
+.benefits {
+  position: relative;
+  background: #ffffff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.benefits::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  border-bottom: solid 2px #63adf2;
+  left: 10%;
+}
+
+.benefits .title-benefits {
+  padding-bottom: 3rem;
+}
+
+.benefits .bnf-title {
+  margin-bottom: 2rem;
+}
+
+.benefits .bnf-content {
+  margin-bottom: 5rem;
+}
+
+
+
+/* Trial Section */
+
+.trial {
+  background: #63adf2;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+
+.trial .btn-trial {
+  background: #ffffff;
+  color: #63adf2;
+  width: 200%;
+}
+
+
+/* Footer Main Section */
+
+.main-footer {
+  color: "white";
+  background: "black";
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+
+.main-footer h3 {
+  color: #ffffff;
+}
+
+
+.main-footer ul {
+  padding-left: 0;
+}
+
+
+.main-footer ul li {
+  list-style: none;
+  color: #ffffff;
+}
+
+
+/* Footer Section */
+
+.footer {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background: "black"
+}
+
+.footer hr {
+  border-top: 1px solid #ffffff;
+}
+
+.footer p {
+  color: #ffffff;
+}
+
+
+
+/* Form Register */
+
+.register-sec {
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  background: #ffffff;
+}
+
+.form-regist {
+  background: #ffffff;
+  border: solid 1px grey;
+  border-radius: 5px;
+}
+
+
+/* View Employee */
+
+.table-employee {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  background: #ffffff;
+}
+
+.search-sec {
+  padding-top: 7rem;
+  padding-bottom: 1rem;
+  background: #ffffff;
+}
+
+.table-employee #btn-edit-emp {
+  text-decoration: none;
+  color: #ffffff;
+}
