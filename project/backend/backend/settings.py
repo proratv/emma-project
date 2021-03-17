@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'core.apps.CoreConfig',
     'todo',
     'register',
-    'user'
+    'user',
+    'employee'
 ]
 
 

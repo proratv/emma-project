@@ -19,12 +19,15 @@ from rest_framework import routers                    # add this
 from todo import views                      # add this
 from register import vws_register
 from user import vws_account
+from employee import vws_employee
 from rest_framework_jwt.views import obtain_jwt_token
 
 router = routers.DefaultRouter()                      # add this
 router.register(r'todos', views.TodoView, 'todo')
 router.register(r'employee', vws_register.EmployeeView, 'register')
 router.register(r'account', vws_account.AccountView, 'account')
+router.register(r'employeelastid', vws_register.EmployeeLastIDSerializer, 'register')
+router.register(r'employeedetail', vws_employee.EmployeeDetailView, 'employee')
 
 
 urlpatterns = [
@@ -32,4 +35,5 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('token-auth/', obtain_jwt_token),
     path('core/', include('core.urls'))
+   # ,path('getlastid/',vws_register.getlastid)
 ]
