@@ -5,7 +5,7 @@ import Landing from "./components/Landing";
 import Register from "./components/Register";
 import ViewEmployee from "./components/ViewEmployee";
 import EditEmployee from "./components/EditEmployee";
-import ModalLogin from "./components/ModalLogin";
+import TodoSimple from "./components/TodoSimple";
 
 
     class App extends Component {
@@ -16,6 +16,7 @@ import ModalLogin from "./components/ModalLogin";
               <Navbar />
                 <Route exact path="/" component={Landing} />
                 <Route path="/register" component={Register} />
+                <Route path="/todosimple" component={TodoSimple} />
                 <Route path="/viewemployee/" exact component={ViewEmployee} />
                 <Route path="/viewemployee/:msg" component={ViewEmployee} />
                 <Route path="/editemployee/:name" component={EditEmployee} />

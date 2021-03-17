@@ -35,6 +35,9 @@ class Navbar extends Component {
             <Link to="/" className="nav-link">Home</Link>
           </li>
           <li className="nav-item active">
+            <Link to="/todosimple" className="nav-link">Todo Simple</Link>
+          </li>
+          <li className="nav-item active">
             <Link to="/register" className="nav-link">Register</Link>
           </li>
           <li className="nav-item active">
