@@ -24,16 +24,15 @@ from rest_framework_jwt.views import obtain_jwt_token
 
 router = routers.DefaultRouter()                      # add this
 router.register(r'todos', views.TodoView, 'todo')
-router.register(r'employee', vws_register.EmployeeView, 'register')
+router.register(r'employee', vws_register.EmployeeView, 'register.EmployeeView')
 router.register(r'account', vws_account.AccountView, 'account')
-router.register(r'employeelastid', vws_register.EmployeeLastIDSerializer, 'register')
+router.register(r'employeelastid', vws_register.EmployeeLastIDSerializer, 'register.EmployeeLastIDSerializer')
 router.register(r'employeedetail', vws_employee.EmployeeDetailView, 'employee')
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
-    path('token-auth/', obtain_jwt_token),
-    path('core/', include('core.urls'))
+    path('token-auth/', obtain_jwt_token)
    # ,path('getlastid/',vws_register.getlastid)
 ]
