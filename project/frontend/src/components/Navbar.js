@@ -54,7 +54,7 @@ class Navbar extends Component {
             </div>
           </li>
           <li className="nav-item active">
-            <a class="nav-link" href="#" onClick={this.handleFormLogin}>Login</a>
+            <a className="nav-link" href="#" onClick={this.handleFormLogin}>Login</a>
           </li>
         </ul>
       </div>
