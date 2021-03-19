@@ -11,6 +11,7 @@ class Register extends Component {
     super()
     this.state = {
       activeItem: {
+        id: 30,
         type: "",
         department: "",
         position: "",
