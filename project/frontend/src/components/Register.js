@@ -78,39 +78,39 @@ class Register extends Component {
 
   handleSubmit = (e, data) => {
     e.preventDefault();
-    // const postHeader = axios.post("http://localhost:8000/api/employee/", this.state.headerItem)
-    // const postDetail = axios.post("http://localhost:8000/api/employeedetail/", this.state.detailItem)
+    const postHeader = axios.post("http://localhost:8000/api/employee/", this.state.headerItem)
+    const postDetail = axios.post("http://localhost:8000/api/employeedetail/", this.state.detailItem)
 
-    // axios
-    //   .all([postHeader, postDetail])
-    //   .then(axios.spread((...res) => {
-    //     if((res[0].status === 200 || res[0].status < 300) && (res[1].status === 200 || res[1].status < 300)){
-    //       alert("Data berhasil diinput")
-    //       this.setState({ detailItem: {
-    //         id: 0,
-    //         type: "",
-    //         department: "",
-    //         position: "",
-    //         phone_1: "",
-    //         phone_2: "",
-    //         address: "",
-    //         pic_name: "",
-    //         pic_contact: "",
-    //         pic_relation: "" }
-    //       })
+    axios
+      .all([postHeader, postDetail])
+      .then(axios.spread((...res) => {
+        if((res[0].status === 200 || res[0].status < 300) && (res[1].status === 200 || res[1].status < 300)){
+          alert("Data berhasil diinput")
+          this.setState({ detailItem: {
+            id: 0,
+            type: "",
+            department: "",
+            position: "",
+            phone_1: "",
+            phone_2: "",
+            address: "",
+            pic_name: "",
+            pic_contact: "",
+            pic_relation: "" }
+          })
 
-    //       this.setState({headerItem: {
-    //         first_name: "",
-    //         last_name: "",
-    //         email: "",
-    //         join_date: ""
-    //       }})
+          this.setState({headerItem: {
+            first_name: "",
+            last_name: "",
+            email: "",
+            join_date: ""
+          }})
 
-    //     console.log(res)
-    //     console.log(res.data)
-    //     }
-    //   })
-    // )
+        console.log(res)
+        console.log(res.data)
+        }
+      })
+    )
 
     this.setState({ detailItem: {
               id: 0,
