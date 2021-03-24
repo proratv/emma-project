@@ -18,23 +18,22 @@ class EmployeeLastID(models.Model):
       return self.title
 
 
-class EmployeeDetail(models.Model):   
-   """
-   id=models.IntegerField(primary_key=True)
-   type=models.CharField(max_length=100)
-   contract=models.DateField()
-   department=models.CharField(max_length=100)
-   position=models.CharField(max_length=100)
-   phone_1=models.CharField(max_length=100)
-   phone_2=models.CharField(max_length=100)
-   address=models.CharField(max_length=100)
-   birthday=models.DateField()
-   pic_name=models.CharField(max_length=100)
-   pic_contact=models.CharField(max_length=100)
-   pic_relation=models.CharField(max_length=100)  
-   objects = models.Manager()
-   #class Meta:
-   db_table='mst_employee'
-   """  
-def _str_(self):
-      return self.title 
+class EmployeeDetail(models.Model):
+      #id=models.IntegerField(primary_key=True)
+      # type=models.CharField(max_length=100)
+      # contract=models.DateField()
+      # department=models.CharField(max_length=100)
+      # position=models.CharField(max_length=100)
+      # phone_1=models.CharField(max_length=100)
+      # phone_2=models.CharField(max_length=100)
+      # address=models.CharField(max_length=100)
+      # birthday=models.DateField()
+      # pic_name=models.CharField(max_length=100)
+      # pic_contact=models.CharField(max_length=100)
+      # pic_relation=models.CharField(max_length=100)  
+      # objects = models.Manager()
+      #class Meta:
+      #db_table='mst_employee'
+      def _str_(self):
+       return self.title 
+      

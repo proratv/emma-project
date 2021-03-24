@@ -24,9 +24,3 @@ class EmployeeDetailModel(models.Model):
  
 def _str_(self):
       return self.title 
-"""
-      def EmployeeDetailModel(db_table):
-    for model in apps.get_models():
-        if model._meta.db_table == 'mst_employee':
-            return model
-"""

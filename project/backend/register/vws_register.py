@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework import viewsets          # add this
 from .serializers import EmployeeSerializer
 from .serializers import EmployeeLastIDSerializer
-from .models import Employee, EmployeeDetail
+from .models import Employee,EmployeeLastID
 
 # Create your views here.
 class EmployeeView(viewsets.ModelViewSet):       # add this
@@ -12,5 +12,5 @@ class EmployeeView(viewsets.ModelViewSet):       # add this
 
 class EmployeeLastIDSerializer(viewsets.ModelViewSet):       # add this
   serializer_class = EmployeeLastIDSerializer         # add this
-  queryset = EmployeeDetail.objects.raw("select max(id)+1 AS ID FROM public.register_employee")              # add this
+  queryset = EmployeeLastID.objects.raw("select max(id)+1 AS ID FROM public.register_employee")              # add this
 
