@@ -34,7 +34,7 @@ router.register(r'account', vws_account.AccountView, 'account')
 router.register(r'employeelastid', vws_register.EmployeeLastIDSerializer, 'register.EmployeeLastIDSerializer')
 router.register(r'employeedetail', vws_employee.EmployeeDetailView, 'employee')
 router.register(r'masteremployee', vws_master.MasterEmployeeView, 'master.MasterEmployeeView')
-router.register(r'masterglobal', vws_master.MasterGlobalView, 'master.MasterGlobalView')
+#router.register(r'masterglobal', vws_master.MasterGlobalView, 'master.MasterGlobalView')
 #passing parameter mst_global
 #router.register(r'masterglobal/?P<condition>\d+)/$', vws_master.MasterGlobalView, 'master.MasterGlobalView')
 

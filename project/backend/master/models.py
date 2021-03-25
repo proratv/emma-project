@@ -53,27 +53,27 @@ def _str_(self):
       return self.title 
      
 
-class MasterGlobalModel(models.Model):     
-      code        =models.CharField(primary_key=True, max_length=30)
-      type        =models.CharField(max_length=15)
-      description =models.CharField(max_length=300)
-      segment1    =models.CharField(max_length=100)
-      segment2    =models.CharField(max_length=100)
-      segment3    =models.CharField(max_length=100)
-      num1        =models.IntegerField(null=True)
-      num2        =models.IntegerField(null=True)
-      num3        =models.IntegerField(null=True)
-      note        =models.CharField(max_length=300)
-      flag_active =models.BooleanField(default=False)
-      user_update =models.CharField(max_length=20)
-      date_update =models.DateField(auto_now_add=True)
-      time_update =models.TimeField(blank=True)
+# class MasterGlobalModel(models.Model):     
+#       code        =models.CharField(primary_key=True, max_length=30)
+#       type        =models.CharField(max_length=15)
+#       description =models.CharField(max_length=300)
+#       segment1    =models.CharField(max_length=100)
+#       segment2    =models.CharField(max_length=100)
+#       segment3    =models.CharField(max_length=100)
+#       num1        =models.IntegerField(null=True)
+#       num2        =models.IntegerField(null=True)
+#       num3        =models.IntegerField(null=True)
+#       note        =models.CharField(max_length=300)
+#       flag_active =models.BooleanField(default=False)
+#       user_update =models.CharField(max_length=20)
+#       date_update =models.DateField(auto_now_add=True)
+#       time_update =models.TimeField(blank=True)
 
-      class Meta:
-            # unique_together = ("code", "type")
-            managed='False'
-            db_table='mst_global'  
-            constraints = [
-            models.UniqueConstraint(fields=['code', 'type'], name='mst_global_pkey')
-            # models.CheckConstraint(check=models.Q(type !=NUll), name='check_const')
-                          ]
+#       class Meta:
+#             # unique_together = ("code", "type")
+#             managed='False'
+#             db_table='mst_global'  
+#             constraints = [
+#             models.UniqueConstraint(fields=['code', 'type'], name='mst_global_pkey')
+#             # models.CheckConstraint(check=models.Q(type !=NUll), name='check_const')
+#                           ]

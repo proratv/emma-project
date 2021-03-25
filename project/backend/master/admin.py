@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import MasterEmployeeModel,MasterGlobalModel
+from .models import MasterEmployeeModel#,MasterGlobalModel
 
 class MasterEmployeeAdmin(admin.ModelAdmin):  # add this
   list_display = (  "id","id_card","first_name","middle_name","last_name","birth_place","birth_date",
@@ -13,9 +13,9 @@ class MasterEmployeeAdmin(admin.ModelAdmin):  # add this
 admin.site.register(MasterEmployeeModel,MasterEmployeeAdmin)
 
 
-class MasterGlobalAdmin(admin.ModelAdmin):
-  list_display =( "code","type","description","segment1","segment2","segment3",
-                  "num1","num2","num3","note","flag_active","user_update",
-                  "date_update","time_update",
-                )
-admin.site.register(MasterGlobalModel,MasterGlobalAdmin)
+# class MasterGlobalAdmin(admin.ModelAdmin):
+#   list_display =( "code","type","description","segment1","segment2","segment3",
+#                   "num1","num2","num3","note","flag_active","user_update",
+#                   "date_update","time_update",
+#                 )
+# admin.site.register(MasterGlobalModel,MasterGlobalAdmin)
